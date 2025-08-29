@@ -1,0 +1,114 @@
+import React from 'react';
+import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from 'lucide-react';
+
+const Footer = () => {
+  return (
+    <footer id="contact" className="py-20 border-t border-[#f6ebef]/10">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          {/* Company Info */}
+          <div>
+            <h3 className="text-2xl font-bold text-[#FFBF00] mb-4">AGL</h3>
+            <p className="text-[#f6ebef] opacity-90 mb-6 leading-relaxed">
+              We are a forward-thinking organization dedicated to delivering innovative solutions 
+              that drive digital transformation and create lasting value for our clients.
+            </p>
+            <div className="flex space-x-4">
+              <a
+                href="#"
+                className="text-[#f6ebef] hover:text-[#FFBF00] transition-colors duration-300"
+              >
+                <Linkedin className="w-6 h-6" />
+              </a>
+              <a
+                href="#"
+                className="text-[#f6ebef] hover:text-[#FFBF00] transition-colors duration-300"
+              >
+                <Twitter className="w-6 h-6" />
+              </a>
+              <a
+                href="#"
+                className="text-[#f6ebef] hover:text-[#FFBF00] transition-colors duration-300"
+              >
+                <Github className="w-6 h-6" />
+              </a>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-lg font-semibold text-[#f6ebef] mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+              {['Home', 'Services', 'Projects', 'Team', 'About'].map((link) => (
+                <li key={link}>
+                  <a
+                    href={`#${link.toLowerCase()}`}
+                    className="text-[#f6ebef] opacity-80 hover:opacity-100 hover:text-[#FFBF00] transition-all duration-300"
+                  >
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h4 className="text-lg font-semibold text-[#f6ebef] mb-4">Get In Touch</h4>
+            <div className="space-y-4">
+              <div className="flex items-center">
+                <Mail className="w-5 h-5 text-[#FFBF00] mr-3" />
+                <a
+                  href="mailto:hello@agl.com"
+                  className="text-[#f6ebef] opacity-80 hover:opacity-100 hover:text-[#FFBF00] transition-all duration-300"
+                >
+                  hello@agl.com
+                </a>
+              </div>
+              <div className="flex items-center">
+                <Phone className="w-5 h-5 text-[#FFBF00] mr-3" />
+                <a
+                  href="tel:+1234567890"
+                  className="text-[#f6ebef] opacity-80 hover:opacity-100 hover:text-[#FFBF00] transition-all duration-300"
+                >
+                  +1 (234) 567-890
+                </a>
+              </div>
+              <div className="flex items-center">
+                <MapPin className="w-5 h-5 text-[#FFBF00] mr-3" />
+                <span className="text-[#f6ebef] opacity-80">
+                  123 Innovation Street, Tech City, TC 12345
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-[#f6ebef]/10">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-[#f6ebef] opacity-60 text-sm">
+              © 2024 AGL Organization. All rights reserved.
+            </p>
+            <div className="flex space-x-6 mt-4 md:mt-0">
+              <a
+                href="#"
+                className="text-[#f6ebef] opacity-60 hover:opacity-100 hover:text-[#FFBF00] transition-all duration-300 text-sm"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="#"
+                className="text-[#f6ebef] opacity-60 hover:opacity-100 hover:text-[#FFBF00] transition-all duration-300 text-sm"
+              >
+                Terms of Service
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
