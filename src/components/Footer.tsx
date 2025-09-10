@@ -39,7 +39,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-[#f6ebef] mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {['Home', 'Services', 'Projects', 'Team', 'About'].map((link) => (
+              {['Home', 'Services', 'Projects', 'About'].map((link) => (
                 <li key={link}>
                   <a
                     href={`#${link.toLowerCase()}`}
@@ -75,9 +75,9 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex items-center">
-                <MapPin className="w-5 h-5 text-[#FFBF00] mr-3" />
+                <MapPin className="w-9 h-9 text-[#FFBF00] mr-3" />
                 <span className="text-[#f6ebef] opacity-80">
-                  1/ Vaiyapuri Nagar
+                  1/ Vaiyapuri Nagar, Vazhiyampalayam, Saravanampatti, Coimbatore, Tamil Nadu - 641107
                 </span>
               </div>
             </div>
