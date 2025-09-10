@@ -59,25 +59,25 @@ const Footer = () => {
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-[#FFBF00] mr-3" />
                 <a
-                  href="mailto:hello@agl.com"
+                  href="mailto:almostgeniuslabs@gmail.com"
                   className="text-[#f6ebef] opacity-80 hover:opacity-100 hover:text-[#FFBF00] transition-all duration-300"
                 >
-                  hello@agl.com
+                  almostgeniuslabs@gmail.com
                 </a>
               </div>
               <div className="flex items-center">
                 <Phone className="w-5 h-5 text-[#FFBF00] mr-3" />
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+91 9943994733"
                   className="text-[#f6ebef] opacity-80 hover:opacity-100 hover:text-[#FFBF00] transition-all duration-300"
                 >
-                  +1 (234) 567-890
+                  +91 9943994733 , +91 9943994734
                 </a>
               </div>
               <div className="flex items-center">
                 <MapPin className="w-5 h-5 text-[#FFBF00] mr-3" />
                 <span className="text-[#f6ebef] opacity-80">
-                  123 Innovation Street, Tech City, TC 12345
+                  1/ Vaiyapuri Nagar
                 </span>
               </div>
             </div>
@@ -88,7 +88,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-[#f6ebef]/10">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-[#f6ebef] opacity-60 text-sm">
-              © 2024 AGL Organization. All rights reserved.
+              © 2025 AGL Organization. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a
