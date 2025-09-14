@@ -6,7 +6,7 @@ const Projects = () => {
     {
       title: 'E-Commerce Platform',
       description: 'Modern e-commerce solution with advanced features and seamless user experience.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '../../public/undraw_web-app_141a.svg',
       tags: ['React', 'Node.js', 'MongoDB'],
       liveUrl: '#',
       githubUrl: '#'
@@ -75,7 +75,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="w-full p-4 h-44 object-cover transition-transform duration-300 group-hover:scale-110 mx-auto"
                 />
                 <div className="absolute inset-0 bg-[#FFBF00]/0 group-hover:bg-[#FFBF00]/20 transition-all duration-300"></div>
               </div>

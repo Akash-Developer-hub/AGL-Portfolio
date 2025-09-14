@@ -56,7 +56,7 @@ const Services = () => {
               <div className="text-[#050505] mb-4 group-hover:text-[#FFBF00] transition-colors duration-300">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-semibold text-[#050505] mb-3">
+              <h3 className="text-xl font-semibold text-[#050505] mb-3  font-press-start">
                 {service.title}
               </h3>
               <p className="text-[#050505] opacity-80">

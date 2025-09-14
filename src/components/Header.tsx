@@ -27,8 +27,8 @@ const Header = () => {
     }`}>
       <nav className="container mx-auto px-6 py-4 border-b border-[#FFBF00]/20">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-[#FFBF00]">
-            AGL
+          <div className="text-xl font-bold text-[#FFBF00]">
+            Almost  Genius Labs
           </div>
           
           {/* Desktop Navigation */}
@@ -37,7 +37,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-[#f6ebef] hover:text-[#FFBF00] transition-colors duration-300"
+                className="text-[#f6ebef] hover:text-[#FFBF00] transition-colors duration-300  font-press-start"
               >
                 {item.name}
               </a>
