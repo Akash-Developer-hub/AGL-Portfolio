@@ -11,7 +11,7 @@ const LoadingScreen: React.FC = () => {
     }, 2000); // Start sliding after 5 seconds
     const hideTimer = setTimeout(() => {
       setIsVisible(false);
-    }, 3000); // Hide after 7 seconds
+    }, 4000); // Hide after 7 seconds
     return () => {
       clearTimeout(slideTimer);
       clearTimeout(hideTimer);
@@ -47,7 +47,7 @@ const LoadingScreen: React.FC = () => {
           d="M0.625 21.5 h10.25 l3.75 -5.875 l7.375 15 l9.75 -30 l7.375 20.875 v0 h10.25"
         />
       </svg> */}
-      <h2 className="text-4xl font-bold text-[#FFBF00]">Almost Genius Labs</h2>
+      <h2 className="text-4xl lg:text-7xl font-bold text-[#FFBF00]">Almost Genius Labs</h2>
 
       {/* 3D Diamond background animation */}
       <svg xmlns="http://www.w3.org/2000/svg" height="200" width="200" className="diamond-container absolute opacity-30">
