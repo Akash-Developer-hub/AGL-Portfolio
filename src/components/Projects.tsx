@@ -6,7 +6,7 @@ const Projects = () => {
     {
       title: 'E-Commerce Platform',
       description: 'Modern e-commerce solution with advanced features and seamless user experience.',
-      image: '../../public/undraw_web-app_141a.svg',
+      image: 'https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['React', 'Node.js', 'MongoDB'],
       liveUrl: '#',
       githubUrl: '#'
