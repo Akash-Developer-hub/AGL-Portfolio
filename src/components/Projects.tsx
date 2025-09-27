@@ -1,7 +1,7 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 
-const Projects = () => {
+const Projects = ({ theme }: { theme: string }) => {
   const projects = [
     {
       title: 'E-Commerce Platform',
@@ -60,7 +60,7 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-[#FFBF00] mb-4">
             Our Projects
           </h2>
-          <p className="text-lg text-[#f6ebef] opacity-90 max-w-2xl mx-auto">
+          <p className={`text-lg ${theme === 'dark' ? 'text-[#f6ebef]' : 'text-black'} opacity-90 max-w-2xl mx-auto`}>
             Showcasing our latest work and innovative solutions
           </p>
         </div>
@@ -69,7 +69,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg bg-[#f6ebef]/5 hover:bg-[#f6ebef]/10 transition-all duration-300"
+              className={`group relative overflow-hidden rounded-lg ${theme === 'dark' ? 'bg-[#f6ebef]/5 hover:bg-[#f6ebef]/10' : 'bg-black/5 hover:bg-black/10'} transition-all duration-300`}
             >
               <div className="relative overflow-hidden">
                 <img
@@ -81,10 +81,10 @@ const Projects = () => {
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#f6ebef] mb-2">
+                <h3 className={`text-xl font-semibold ${theme === 'dark' ? 'text-[#f6ebef]' : 'text-black'} mb-2`}>
                   {project.title}
                 </h3>
-                <p className="text-[#f6ebef] opacity-80 mb-4">
+                <p className={`${theme === 'dark' ? 'text-[#f6ebef]' : 'text-black'} opacity-80 mb-4`}>
                   {project.description}
                 </p>
                 
@@ -102,14 +102,14 @@ const Projects = () => {
                 <div className="flex space-x-4">
                   <a
                     href={project.liveUrl}
-                    className="flex items-center text-[#f6ebef] hover:text-[#FFBF00] transition-colors duration-300"
+                    className={`flex items-center ${theme === 'dark' ? 'text-[#f6ebef]' : 'text-black'} hover:text-[#FFBF00] transition-colors duration-300`}
                   >
                     <ExternalLink className="w-4 h-4 mr-1" />
                     Live Demo
                   </a>
                   <a
                     href={project.githubUrl}
-                    className="flex items-center text-[#f6ebef] hover:text-[#FFBF00] transition-colors duration-300"
+                    className={`flex items-center ${theme === 'dark' ? 'text-[#f6ebef]' : 'text-black'} hover:text-[#FFBF00] transition-colors duration-300`}
                   >
                     <Github className="w-4 h-4 mr-1" />
                     Code

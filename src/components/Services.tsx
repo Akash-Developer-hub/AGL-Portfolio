@@ -1,7 +1,7 @@
 import React from 'react';
 import { Code, Palette, Zap, Shield, Globe, Users } from 'lucide-react';
 
-const Services = () => {
+const Services = ({ theme }: { theme: string }) => {
   const services = [
     {
       icon: <Code className="w-8 h-8" />,
@@ -42,7 +42,7 @@ const Services = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-[#FFBF00] mb-4">
             Our Services
           </h2>
-          <p className="text-lg text-[#f6ebef] opacity-90 max-w-2xl mx-auto">
+          <p className={`text-lg ${theme === 'dark' ? 'text-[#f6ebef]' : 'text-black'} opacity-90 max-w-2xl mx-auto`}>
             We provide comprehensive solutions tailored to meet your unique business needs
           </p>
         </div>
@@ -51,15 +51,15 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-[#f6ebef] p-8 rounded-lg hover:transform hover:scale-105 transition-all duration-300 group"
+              className={`${theme === 'dark' ? 'bg-[#f6ebef]' : 'bg-black'} p-8 rounded-lg hover:transform hover:scale-105 transition-all duration-300 group`}
             >
-              <div className="text-[#050505] mb-4 group-hover:text-[#FFBF00] transition-colors duration-300">
+              <div className={`${theme === 'dark' ? 'text-[#050505]' : 'text-white'} mb-4 group-hover:text-[#FFBF00] transition-colors duration-300`}>
                 {service.icon}
               </div>
-              <h3 className="text-xl font-semibold text-[#050505] mb-3  font-press-start">
+              <h3 className={`text-xl font-semibold ${theme === 'dark' ? 'text-[#050505]' : 'text-white'} mb-3 font-press-start`}>
                 {service.title}
               </h3>
-              <p className="text-[#050505] opacity-80">
+              <p className={`${theme === 'dark' ? 'text-[#050505]' : 'text-white'} opacity-80`}>
                 {service.description}
               </p>
             </div>
