@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChevronDown, ArrowRight } from 'lucide-react';
 
-const Hero = () => {
+const Hero = ({ theme }: { theme: string }) => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-14">
       {/* Background gradient */}
@@ -18,8 +18,8 @@ const Hero = () => {
           </div>
 
           {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#f6ebef71] mb-6 leading-tight">
-            <span className="text-[#f6ebef]">Complete</span>
+          <h1 className={`text-5xl md:text-7xl lg:text-8xl font-bold ${theme === 'dark' ? 'text-[#f6ebef71]' : 'text-black/70'} mb-6 leading-tight`}>
+            <span className={theme === 'dark' ? 'text-[#f6ebef]' : 'text-black'}>Complete</span>
             <br />
             <span className="relative">
               Tech Solutions
@@ -28,13 +28,13 @@ const Hero = () => {
               </div>
             </span>
             <br />
-            <span className="text-[#f6ebef] font-press-start text-4xl md:text-6xl lg:text-7xl">
+            <span className={`${theme === 'dark' ? 'text-[#f6ebef]' : 'text-black'} font-press-start text-4xl md:text-6xl lg:text-7xl`}>
               @  <span className="text-[#FFBF00]">AGL</span>
             </span>
           </h1>
 
           {/* Description */}
-          <p className="text-lg md:text-xl text-[#f6ebef]/80 mb-12 max-w-2xl leading-relaxed">
+          <p className={`text-lg md:text-xl ${theme === 'dark' ? 'text-[#f6ebef]/80' : 'text-black/80'} mb-12 max-w-2xl leading-relaxed`}>
             Almost Genius Labs delivers comprehensive technology solutions combining
             cutting-edge software development, innovative hardware solutions, and
             expert consulting services for modern businesses.
@@ -44,13 +44,13 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <a
               href="#projects"
-              className="inline-flex items-center justify-center bg-[#f6ebef] text-[#050505] px-8 py-4 rounded-lg font-semibold hover:bg-[#f6ebef]/90 transition-all duration-300 transform hover:scale-105"
+              className={`inline-flex items-center justify-center ${theme === 'dark' ? 'bg-[#f6ebef] text-[#050505]' : 'bg-black text-white'} px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105`}
             >
               View Our Work
             </a>
             <a
               href="#services"
-              className="inline-flex items-center justify-center border border-[#FFBF00]/30 text-[#f6ebef] px-8 py-4 rounded-lg font-semibold hover:bg-[#FFBF00]/10 hover:border-[#FFBF00]/50 transition-all duration-300"
+              className={`inline-flex items-center justify-center border border-[#FFBF00]/30 ${theme === 'dark' ? 'text-[#f6ebef]' : 'text-black'} px-8 py-4 rounded-lg font-semibold hover:bg-[#FFBF00]/10 hover:border-[#FFBF00]/50 transition-all duration-300`}
             >
               Our Services
             </a>

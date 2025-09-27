@@ -5,17 +5,28 @@ import Projects from './components/Projects';
 // import Team from './components/Team';
 import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
+import PullSwitch from './components/PullSwitch';
+import { useState } from 'react';
 
 function App() {
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark');
+
   return (
-    <div className="bg-[#050505] text-[#f6ebef] min-h-screen">
-      <LoadingScreen />
-      <Header />
-      <Hero />
-      <Services />
-      <Projects />
+    <div className={theme === 'dark' ? "bg-[#050505] text-[#f6ebef] min-h-screen" : "bg-white text-black min-h-screen"}>
+      <div className="relative ">
+        <LoadingScreen />
+        <Header theme={theme} />
+        {/* Rope is absolutely positioned -> no layout gap */}
+        <PullSwitch theme={theme} setTheme={setTheme} />
+      </div>
+
+      {/* Hero comes directly after Header, no gap */}
+      <Hero theme={theme} />
+
+      <Services theme={theme} />
+      <Projects theme={theme} />
       {/* <Team /> */}
-      <Footer />
+      <Footer theme={theme} />
     </div>
   );
 }
