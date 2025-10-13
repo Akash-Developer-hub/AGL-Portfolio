@@ -5,7 +5,7 @@ const Projects = ({ theme }: { theme: string }) => {
     {
       title: 'ShapeQR – Custom QR Code Generator',
       description: 'Create unique, scannable QR codes shaped from your images using advanced image processing. Built with FastAPI and OpenCV for creative and functional QR generation.',
-      image: 'https://images.pexels.com/photos/4245823/pexels-photo-4245823.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/aweawf.png',
       tags: ['FastAPI', 'OpenCV', 'Python', 'Pillow', 'QR Code'],
       liveUrl: 'https://shape-qr.vercel.app/',
       githubUrl: 'https://github.com/Akash-Developer-hub/ShapeQR.git'
@@ -54,7 +54,7 @@ const Projects = ({ theme }: { theme: string }) => {
     {
       title: 'ShapeQR – Custom QR Code Generator',
       description: 'Create unique, scannable QR codes shaped from your images using advanced image processing. Built with FastAPI and OpenCV for creative and functional QR generation.',
-      image: 'https://images.pexels.com/photos/4245823/pexels-photo-4245823.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/aweawf.png',
       tags: ['FastAPI', 'OpenCV', 'Python', 'Pillow'],
       liveUrl: 'https://shape-qr.vercel.app/',
       githubUrl: 'https://github.com/Akash-Developer-hub/ShapeQR.git'
