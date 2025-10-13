@@ -1,4 +1,3 @@
-import React from 'react';
 import { ChevronDown, ArrowRight } from 'lucide-react';
 
 const Hero = ({ theme }: { theme: string }) => {
@@ -13,46 +12,49 @@ const Hero = ({ theme }: { theme: string }) => {
           {/* Small badge */}
           <div className="inline-flex items-center px-4 py-2 bg-[#FFBF00]/10 border border-[#FFBF00]/20 rounded-full text-[#FFBF00] text-sm font-medium mb-8">
             <span className="w-2 h-2 bg-[#FFBF00] rounded-full mr-2 animate-pulse"></span>
-            Introducing Almost Genius Labs
+            {theme === 'light' ? 'Professional Technology Solutions' : 'Introducing Almost Genius Labs'}
             <ArrowRight className="ml-2 w-4 h-4" />
           </div>
 
           {/* Main heading */}
           <h1 className={`text-5xl md:text-7xl lg:text-8xl font-bold ${theme === 'dark' ? 'text-[#f6ebef71]' : 'text-black/70'} mb-6 leading-tight`}>
-            <span className={theme === 'dark' ? 'text-[#f6ebef]' : 'text-black'}>Complete</span>
+            <span className={theme === 'dark' ? 'text-[#f6ebef]' : 'text-black'}>
+              {theme === 'light' ? 'Digital Innovation' : 'Complete'}
+            </span>
             <br />
             <span className="relative">
-              Tech Solutions
+              {theme === 'light' ? 'Excellence' : 'Tech Solutions'}
               <div className="absolute inset-0 md:translate-y-2 lg:translate-y-3 bg-gradient-to-r from-[#FFBF00] to-[#FFD700] bg-clip-text text-transparent font-bold">
-                Tech Solutions
+                {theme === 'light' ? 'Excellence' : 'Tech Solutions'}
               </div>
             </span>
             <br />
             <span className={`${theme === 'dark' ? 'text-[#f6ebef]' : 'text-black'} font-press-start text-4xl md:text-6xl lg:text-7xl`}>
-              @  <span className="text-[#FFBF00]">AGL</span>
+              {theme === 'light' ? 'Transforming Businesses' : '@  AGL'}
             </span>
           </h1>
 
           {/* Description */}
-          <p className={`text-lg md:text-xl ${theme === 'dark' ? 'text-[#f6ebef]/80' : 'text-black/80'} mb-12 max-w-2xl leading-relaxed`}>
-            Almost Genius Labs delivers comprehensive technology solutions combining
-            cutting-edge software development, innovative hardware solutions, and
-            expert consulting services for modern businesses.
+          <p className={`text-lg md:text-xl ${theme === 'dark' ? 'text-[#f6ebef]/80' : 'text-gray-600'} mb-12 max-w-2xl leading-relaxed`}>
+            {theme === 'light' 
+              ? 'Almost Genius Technologies delivers cutting-edge digital solutions that transform businesses. We combine strategic consulting, advanced software development, and innovative technology implementation to drive measurable results and sustainable growth for forward-thinking enterprises.'
+              : 'Almost Genius Labs delivers comprehensive technology solutions combining cutting-edge software development, innovative hardware solutions, and expert consulting services for modern businesses.'
+            }
           </p>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <a
               href="#projects"
-              className={`inline-flex items-center justify-center ${theme === 'dark' ? 'bg-[#f6ebef] text-[#050505]' : 'bg-black text-white'} px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105`}
+              className={`inline-flex items-center justify-center ${theme === 'dark' ? 'bg-[#f6ebef] text-[#050505]' : 'bg-gray-900 text-white'} px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105`}
             >
-              View Our Work
+              {theme === 'light' ? 'View Our Portfolio' : 'View Our Work'}
             </a>
             <a
               href="#services"
-              className={`inline-flex items-center justify-center border border-[#FFBF00]/30 ${theme === 'dark' ? 'text-[#f6ebef]' : 'text-black'} px-8 py-4 rounded-lg font-semibold hover:bg-[#FFBF00]/10 hover:border-[#FFBF00]/50 transition-all duration-300`}
+              className={`inline-flex items-center justify-center border ${theme === 'dark' ? 'border-[#FFBF00]/30 text-[#f6ebef]' : 'border-gray-300 text-gray-700'} px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 hover:border-gray-400 transition-all duration-300`}
             >
-              Our Services
+              {theme === 'light' ? 'Explore Solutions' : 'Our Services'}
             </a>
           </div>
         </div>

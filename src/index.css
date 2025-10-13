@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Architects Daughter';
-  src: url('/font/ArchitectsDaughter-Regular.ttf') format('truetype');
+  font-family: 'Kang Regular';
+  src: url('/font/kanggeregular-3l2by.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Press Start 2P';
+  font-family: 'Orbitron Regular';
   src: url('/font/Orbitron-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -23,8 +23,17 @@
     scroll-behavior: smooth;
   }
   
-  body {
-    font-family: 'Architects Daughter', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  /* Light theme font (default) */
+  body,
+  body.light-theme {
+    font-family: 'Kang Regular', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Dark theme font */
+  body.dark-theme {
+    font-family: 'Orbitron Regular', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -32,7 +41,15 @@
 
 @layer utilities {
   .font-press-start {
-    font-family: 'Press Start 2P', monospace;
+    font-family: 'Orbitron Regular', monospace;
+  }
+  
+  .font-light-theme {
+    font-family: 'Kang Regular', sans-serif;
+  }
+  
+  .font-dark-theme {
+    font-family: 'Orbitron Regular', sans-serif;
   }
   
   .animate-fade-in {

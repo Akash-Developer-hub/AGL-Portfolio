@@ -1,8 +1,38 @@
-import React from 'react';
 import { Code, Palette, Zap, Shield, Globe, Users } from 'lucide-react';
 
 const Services = ({ theme }: { theme: string }) => {
-  const services = [
+  const services = theme === 'light' ? [
+    {
+      icon: <Code className="w-8 h-8" />,
+      title: 'Enterprise Software Development',
+      description: 'Custom enterprise-grade applications built with scalable architectures, microservices, and cloud-native technologies for mission-critical business operations.'
+    },
+    {
+      icon: <Palette className="w-8 h-8" />,
+      title: 'Digital Experience Design',
+      description: 'User-centered design solutions that combine strategic UX research, modern UI frameworks, and data-driven design systems to create exceptional digital experiences.'
+    },
+    {
+      icon: <Zap className="w-8 h-8" />,
+      title: 'Performance Engineering',
+      description: 'Advanced optimization services including system architecture redesign, database tuning, CDN implementation, and automated monitoring for enterprise-scale applications.'
+    },
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: 'Cybersecurity Solutions',
+      description: 'Comprehensive security frameworks, compliance auditing, threat modeling, and implementation of industry-standard security protocols to protect digital assets.'
+    },
+    {
+      icon: <Globe className="w-8 h-8" />,
+      title: 'Digital Transformation Strategy',
+      description: 'Strategic consulting for technology modernization, legacy system migration, cloud adoption roadmaps, and digital innovation initiatives aligned with business objectives.'
+    },
+    {
+      icon: <Users className="w-8 h-8" />,
+      title: 'Technical Leadership',
+      description: 'Expert technical advisory, architecture reviews, team mentoring, and strategic technology planning to accelerate development velocity and product quality.'
+    }
+  ] : [
     {
       icon: <Code className="w-8 h-8" />,
       title: 'Web Development',
@@ -40,10 +70,13 @@ const Services = ({ theme }: { theme: string }) => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-[#FFBF00] mb-4">
-            Our Services
+            {theme === 'light' ? 'Technology Solutions' : 'Our Services'}
           </h2>
-          <p className={`text-lg ${theme === 'dark' ? 'text-[#f6ebef]' : 'text-black'} opacity-90 max-w-2xl mx-auto`}>
-            We provide comprehensive solutions tailored to meet your unique business needs
+          <p className={`text-lg ${theme === 'dark' ? 'text-[#f6ebef]' : 'text-gray-600'} opacity-90 max-w-2xl mx-auto`}>
+            {theme === 'light' 
+              ? 'Comprehensive technology services designed to accelerate digital transformation and drive business innovation through strategic implementation and expert execution.'
+              : 'We provide comprehensive solutions tailored to meet your unique business needs'
+            }
           </p>
         </div>
 
@@ -51,15 +84,15 @@ const Services = ({ theme }: { theme: string }) => {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`${theme === 'dark' ? 'bg-[#f6ebef]' : 'bg-black'} p-8 rounded-lg hover:transform hover:scale-105 transition-all duration-300 group`}
+              className={`${theme === 'dark' ? 'bg-[#f6ebef]' : 'bg-white border border-gray-200'} p-8 rounded-lg hover:transform hover:scale-105 transition-all duration-300 group shadow-lg ${theme === 'light' ? 'hover:shadow-xl' : ''}`}
             >
-              <div className={`${theme === 'dark' ? 'text-[#050505]' : 'text-white'} mb-4 group-hover:text-[#FFBF00] transition-colors duration-300`}>
+              <div className={`${theme === 'dark' ? 'text-[#050505]' : 'text-[#FFBF00]'} mb-4 group-hover:text-[#FFBF00] transition-colors duration-300`}>
                 {service.icon}
               </div>
-              <h3 className={`text-xl font-semibold ${theme === 'dark' ? 'text-[#050505]' : 'text-white'} mb-3 font-press-start`}>
+              <h3 className={`text-xl font-semibold ${theme === 'dark' ? 'text-[#050505]' : 'text-gray-800'} mb-3 ${theme === 'dark' ? 'font-press-start' : 'font-bold'}`}>
                 {service.title}
               </h3>
-              <p className={`${theme === 'dark' ? 'text-[#050505]' : 'text-white'} opacity-80`}>
+              <p className={`${theme === 'dark' ? 'text-[#050505]' : 'text-gray-600'} opacity-80`}>
                 {service.description}
               </p>
             </div>

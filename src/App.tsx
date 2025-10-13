@@ -6,13 +6,18 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
 import PullSwitch from './components/PullSwitch';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark');
 
+  useEffect(() => {
+    // Apply theme-specific font class to body
+    document.body.className = theme === 'dark' ? 'dark-theme' : 'light-theme';
+  }, [theme]);
+
   return (
-    <div className={theme === 'dark' ? "bg-[#050505] text-[#f6ebef] min-h-screen" : "bg-white text-black min-h-screen"}>
+    <div className={theme === 'dark' ? "bg-[#050505] text-[#f6ebef] min-h-screen" : "bg-white text-gray-800 min-h-screen"}>
       <div className="relative ">
         <LoadingScreen />
         <Header theme={theme} />
