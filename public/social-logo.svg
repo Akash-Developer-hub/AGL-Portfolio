@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <style>
+      .tesla-coil {
+        stroke: #FFBF00;
+        stroke-width: 8;
+        fill: none;
+      }
+      
+      .tesla-spark {
+        stroke: #FFD700;
+        stroke-width: 4;
+        fill: none;
+        opacity: 0.9;
+      }
+      
+      .tesla-core {
+        stroke: #FFBF00;
+        stroke-width: 10;
+        fill: none;
+      }
+      
+      .bulb-glass {
+        fill: #f6ebef;
+        fill-opacity: 0.95;
+        stroke: #ddd;
+        stroke-width: 4;
+      }
+      
+      .company-text {
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        fill: #333;
+      }
+      
+      .bg-circle {
+        fill: #ffffff;
+        stroke: #e0e0e0;
+        stroke-width: 2;
+      }
+    </style>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="250" class="bg-circle"/>
+  
+  <!-- Light bulb glass (scaled up) -->
+  <path d="M256 48 C336 48 392 104 392 184 C392 240 352 280 336 296 L336 336 L176 336 L176 296 C160 280 120 240 120 184 C120 104 176 48 256 48 Z" 
+        class="bulb-glass"/>
+  
+  <!-- Bulb base/screw threads (scaled up) -->
+  <rect x="176" y="336" width="160" height="24" fill="#888" rx="4"/>
+  <rect x="176" y="360" width="160" height="24" fill="#777" rx="4"/>
+  <rect x="176" y="384" width="160" height="24" fill="#666" rx="4"/>
+  <rect x="192" y="408" width="128" height="32" fill="#555" rx="16"/>
+  
+  <!-- Tesla coil central conductor (scaled up) -->
+  <line x1="256" y1="96" x2="256" y2="304" class="tesla-core"/>
+  
+  <!-- Tesla coil spirals (scaled up) -->
+  <path d="M224 112 Q256 104 288 112 Q256 120 224 128 Q256 136 288 144 Q256 152 224 160" class="tesla-coil"/>
+  <path d="M224 160 Q256 152 288 160 Q256 168 224 176 Q256 184 288 192 Q256 200 224 208" class="tesla-coil"/>
+  <path d="M224 208 Q256 200 288 208 Q256 216 224 224 Q256 232 288 240 Q256 248 224 256" class="tesla-coil"/>
+  <path d="M224 256 Q256 248 288 256 Q256 264 224 272 Q256 280 288 288 Q256 296 224 304" class="tesla-coil"/>
+  
+  <!-- Secondary coil details (scaled up) -->
+  <circle cx="256" cy="128" r="40" fill="none" stroke="#FFBF00" stroke-width="6" opacity="0.7"/>
+  <circle cx="256" cy="192" r="48" fill="none" stroke="#FFBF00" stroke-width="6" opacity="0.7"/>
+  <circle cx="256" cy="256" r="40" fill="none" stroke="#FFBF00" stroke-width="6" opacity="0.7"/>
+  
+  <!-- Tesla sparks/arcs (scaled up, static and visible) -->
+  <path d="M208 144 Q176 128 192 160" class="tesla-spark"/>
+  <path d="M304 176 Q336 160 320 192" class="tesla-spark"/>
+  <path d="M208 240 Q176 256 192 224" class="tesla-spark"/>
+  <path d="M304 272 Q336 288 320 256" class="tesla-spark"/>
+  <path d="M224 192 Q192 208 208 176" class="tesla-spark"/>
+  <path d="M288 224 Q320 240 304 208" class="tesla-spark"/>
+  
+  <!-- Top and bottom terminals (scaled up) -->
+  <circle cx="256" cy="96" r="20" fill="#FFBF00"/>
+  <circle cx="256" cy="304" r="16" fill="#FFBF00"/>
+  
+  <!-- Company name at bottom -->
+  <text x="256" y="460" text-anchor="middle" class="company-text" font-size="32">AGL</text>
+  <text x="256" y="485" text-anchor="middle" class="company-text" font-size="16" opacity="0.8">Almost Genius Labs</text>
+</svg>

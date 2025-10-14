@@ -5,6 +5,8 @@
     
     <!-- Favicon - Animated SVG First -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Animated SVG Favicon (prioritized for modern browsers) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -26,19 +28,26 @@
     <meta property="og:description" content="Almost Genius Labs delivers comprehensive technology solutions combining cutting-edge software development, innovative hardware solutions, and expert consulting services for modern businesses." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://almostgeniuslabs.com" />
-    <meta property="og:image" content="https://almostgeniuslabs.com/favicon.svg" />
-    <meta property="og:image:type" content="image/svg+xml" />
-    <meta property="og:image:width" content="32" />
-    <meta property="og:image:height" content="32" />
+    <meta property="og:image" content="/social-logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
     <meta property="og:image:alt" content="Almost Genius Labs - Complete Tech Solutions" />
+    <!-- Alternative image sizes for better platform compatibility -->
+    <meta property="og:image" content="/social-logo-256x256.png" />
+    <meta property="og:image:width" content="256" />
+    <meta property="og:image:height" content="256" />
     <meta property="og:locale" content="en_US" />
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="AGL - Complete Tech Solutions | Almost Genius Labs" />
     <meta name="twitter:description" content="Almost Genius Labs delivers comprehensive technology solutions combining cutting-edge software development, innovative hardware solutions, and expert consulting services for modern businesses." />
-    <meta name="twitter:image" content="https://almostgeniuslabs.com/favicon.svg" />
+    <meta name="twitter:image" content="/social-logo.png" />
     <meta name="twitter:image:alt" content="Almost Genius Labs - Complete Tech Solutions" />
+    <!-- Additional Twitter image formats -->
+    <meta name="twitter:image:width" content="512" />
+    <meta name="twitter:image:height" content="512" />
     
     <!-- Theme and Brand Colors -->
     <meta name="theme-color" content="#FFBF00" />
@@ -59,7 +68,13 @@
       "name": "Almost Genius Labs",
       "alternateName": "AGL",
       "url": "https://almostgeniuslabs.com",
-      "logo": "/favicon.svg",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "/social-logo.png",
+        "width": "512",
+        "height": "512",
+        "caption": "Almost Genius Labs Tesla Coil Innovation Logo"
+      },
       "description": "Almost Genius Labs delivers comprehensive technology solutions combining cutting-edge software development, innovative hardware solutions, and expert consulting services for modern businesses.",
       "foundingDate": "2024",
       "email": "almostgeniuslabs@gmail.com",
