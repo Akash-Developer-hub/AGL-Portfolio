@@ -19,7 +19,7 @@ const Footer = ({ theme }: { theme: string }) => {
                 href="https://www.linkedin.com/company/almost-genius-labs/"
                 className={`${theme === 'dark' ? 'text-[#f6ebef]' : 'text-gray-600'} hover:text-[#FFBF00] transition-colors duration-300`}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 aria-label="Visit our LinkedIn page"
               >
                 <Linkedin className="w-6 h-6" />

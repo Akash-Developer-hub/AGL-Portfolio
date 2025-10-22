@@ -154,7 +154,7 @@ const Projects = ({ theme }: { theme: string }) => {
                   <a
                     href={project.liveUrl}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className={`flex items-center ${theme === 'dark' ? 'text-[#f6ebef]' : 'text-gray-600'} hover:text-[#FFBF00] transition-colors duration-300`}
                   >
                     <ExternalLink className="w-4 h-4 mr-1 mb-2" />
@@ -163,7 +163,7 @@ const Projects = ({ theme }: { theme: string }) => {
                   <a
                     href={project.githubUrl}
                     target='_blank'
-                    rel='noopener noreferrer'
+                    rel='noopener noreferrer nofollow'
                     className={`flex items-center ${theme === 'dark' ? 'text-[#f6ebef]' : 'text-gray-600'} hover:text-[#FFBF00] transition-colors duration-300`}
                   >
                     <Github className="w-4 h-4 mr-1 mb-2" />
