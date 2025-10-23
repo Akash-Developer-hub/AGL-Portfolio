@@ -1,0 +1,67 @@
+# Robots.txt for Almost Genius Labs (AGL) Portfolio
+# https://almostgeniuslabs.com
+
+# Allow all crawlers access to the site
+User-agent: *
+Allow: /
+
+# Specific directives for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# Block access to development and system files
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /dist/
+Disallow: /build/
+Disallow: /.env
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /tsconfig.json
+Disallow: /vite.config.ts
+Disallow: /eslint.config.js
+Disallow: /postcss.config.js
+Disallow: /tailwind.config.js
+
+# Block access to temporary and cache files
+Disallow: /cache/
+Disallow: /tmp/
+Disallow: /*.tmp
+Disallow: /*.cache
+
+# Block access to backup files
+Disallow: /*.bak
+Disallow: /*.backup
+Disallow: /*~
+
+# Allow access to important assets
+Allow: /favicon.ico
+Allow: /favicon.svg
+Allow: /favicon-*.png
+Allow: /apple-touch-icon.png
+Allow: /social-logo*.png
+Allow: /social-logo*.svg
+Allow: /public/font/
+Allow: /public/*.svg
+Allow: /public/*.png
+
+# Sitemap location
+Sitemap: https://almostgeniuslabs.com/sitemap.xml
+
+# Additional sitemaps (if needed in future)
+# Sitemap: https://almostgeniuslabs.com/sitemap-images.xml
+# Sitemap: https://almostgeniuslabs.com/sitemap-videos.xml
+
+# Host specification
+Host: almostgeniuslabs.com

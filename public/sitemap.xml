@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage - Highest Priority -->
+  <url>
+    <loc>https://almostgeniuslabs.com/</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    
+    <!-- Images for homepage -->
+    <image:image>
+      <image:loc>https://almostgeniuslabs.com/social-logo.png</image:loc>
+      <image:title>Almost Genius Labs Logo - Tesla Coil Innovation</image:title>
+      <image:caption>Almost Genius Labs (AGL) official logo featuring Tesla coil design representing innovation and genius technology solutions</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://almostgeniuslabs.com/favicon.svg</image:loc>
+      <image:title>Almost Genius Labs Animated Favicon</image:title>
+      <image:caption>Animated Tesla coil favicon for Almost Genius Labs website</image:caption>
+    </image:image>
+    
+    <!-- Undraw illustrations -->
+    <image:image>
+      <image:loc>https://almostgeniuslabs.com/undraw_web-app_141a.svg</image:loc>
+      <image:title>Web Development Services Illustration</image:title>
+      <image:caption>Professional web application development services by Almost Genius Labs</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://almostgeniuslabs.com/undraw_professor_d7zn.svg</image:loc>
+      <image:title>Technology Consulting Services</image:title>
+      <image:caption>Expert technology consulting and training services</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://almostgeniuslabs.com/undraw_medicine_hqqg.svg</image:loc>
+      <image:title>Healthcare Technology Solutions</image:title>
+      <image:caption>Specialized healthcare and medical technology solutions</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://almostgeniuslabs.com/undraw_credit-card_t6qm.svg</image:loc>
+      <image:title>Fintech and Payment Solutions</image:title>
+      <image:caption>Financial technology and secure payment processing solutions</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://almostgeniuslabs.com/undraw_web-shopping_xd5k.svg</image:loc>
+      <image:title>E-commerce Solutions</image:title>
+      <image:caption>Complete e-commerce platform development and optimization</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://almostgeniuslabs.com/undraw_conversation_15p8.svg</image:loc>
+      <image:title>Communication and Collaboration Tools</image:title>
+      <image:caption>Custom communication platforms and collaboration software</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Services Section -->
+  <url>
+    <loc>https://almostgeniuslabs.com/#services</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Projects/Portfolio Section -->
+  <url>
+    <loc>https://almostgeniuslabs.com/#projects</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Team Section -->
+  <url>
+    <loc>https://almostgeniuslabs.com/#team</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- About Section -->
+  <url>
+    <loc>https://almostgeniuslabs.com/#about</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Contact Section -->
+  <url>
+    <loc>https://almostgeniuslabs.com/#contact</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Future pages (uncomment when created) -->
+  <!--
+  <url>
+    <loc>https://almostgeniuslabs.com/services</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://almostgeniuslabs.com/about</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://almostgeniuslabs.com/portfolio</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://almostgeniuslabs.com/contact</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://almostgeniuslabs.com/blog</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://almostgeniuslabs.com/careers</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://almostgeniuslabs.com/privacy-policy</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://almostgeniuslabs.com/terms-of-service</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  -->
+  
+</urlset>

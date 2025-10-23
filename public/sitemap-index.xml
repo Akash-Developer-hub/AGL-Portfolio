@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Main sitemap -->
+  <sitemap>
+    <loc>https://almostgeniuslabs.com/sitemap.xml</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+  </sitemap>
+  
+  <!-- Future specialized sitemaps (uncomment when needed) -->
+  <!--
+  <sitemap>
+    <loc>https://almostgeniuslabs.com/sitemap-images.xml</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://almostgeniuslabs.com/sitemap-videos.xml</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://almostgeniuslabs.com/sitemap-blog.xml</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://almostgeniuslabs.com/sitemap-projects.xml</loc>
+    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+  </sitemap>
+  -->
+  
+</sitemapindex>
