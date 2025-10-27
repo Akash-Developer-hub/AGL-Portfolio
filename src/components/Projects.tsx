@@ -106,7 +106,7 @@ const Projects = ({ theme }: { theme: string }) => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-[#FFBF00] mb-4">
-            {theme === 'light' ? 'Client Success Stories' : 'Our Projects'}
+            {theme === 'light' ? 'Where Vision Meets Execution' : 'Our Projects'}
           </h2>
           <p className={`text-lg ${theme === 'dark' ? 'text-[#f6ebef]' : 'text-gray-600'} opacity-90 max-w-2xl mx-auto`}>
             {theme === 'light' 

@@ -6,7 +6,9 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
 import PullSwitch from './components/PullSwitch';
+import ScrollToSection from './components/ScrollToSection';
 import { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark');
@@ -16,8 +18,26 @@ function App() {
     document.body.className = theme === 'dark' ? 'dark-theme' : 'light-theme';
   }, [theme]);
 
+  const MainContent = () => (
+    <>
+      <section id="home">
+        <Hero theme={theme} />
+      </section>
+      <section id="services">
+        <Services theme={theme} />
+      </section>
+      <section id="projects">
+        <Projects theme={theme} />
+      </section>
+      <section id="contact">
+        <Footer theme={theme} />
+      </section>
+    </>
+  );
+
   return (
     <div className={theme === 'dark' ? "bg-[#050505] text-[#f6ebef] min-h-screen" : "bg-white text-gray-800 min-h-screen"}>
+      <ScrollToSection />
       <div className="relative ">
         <LoadingScreen />
         <Header theme={theme} />
@@ -25,13 +45,12 @@ function App() {
         <PullSwitch theme={theme} setTheme={setTheme} />
       </div>
 
-      {/* Hero comes directly after Header, no gap */}
-      <Hero theme={theme} />
-
-      <Services theme={theme} />
-      <Projects theme={theme} />
-      {/* <Team /> */}
-      <Footer theme={theme} />
+      <Routes>
+        <Route path="/" element={<MainContent />} />
+        <Route path="/services" element={<MainContent />} />
+        <Route path="/projects" element={<MainContent />} />
+        <Route path="/contact" element={<MainContent />} />
+      </Routes>
     </div>
   );
 }

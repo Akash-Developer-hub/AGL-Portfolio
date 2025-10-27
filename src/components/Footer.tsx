@@ -47,7 +47,7 @@ const Footer = ({ theme }: { theme: string }) => {
               {theme === 'light' ? 'Navigation' : 'Quick Links'}
             </h4>
             <ul className="space-y-2">
-              {(theme === 'light' ? ['Home', 'Solutions', 'Portfolio', 'Contact'] : ['Home', 'Services', 'Projects', 'About']).map((link) => (
+              {(theme === 'light' ? ['Home', 'Solutions', 'Projects', 'Contact'] : ['Home', 'Services', 'Projects', 'Contact']).map((link) => (
                 <li key={link}>
                   <a
                     href={`#${link.toLowerCase()}`}

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 const Header = ({ theme }: { theme: string }) => {
@@ -14,15 +15,15 @@ const Header = ({ theme }: { theme: string }) => {
   }, []);
 
   const navItems = theme === 'light' ? [
-    { name: 'Home', href: '#home' },
-    { name: 'Solutions', href: '#services' },
-    { name: 'Portfolio', href: '#projects' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Home', href: '/' },
+    { name: 'Solutions', href: '/services' },
+    { name: 'projects', href: '/projects' },
+    { name: 'Contact', href: '/contact' }
   ] : [
-    { name: 'Home', href: '#home' },
-    { name: 'Services', href: '#services' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Home', href: '/' },
+    { name: 'Services', href: '/services' },
+    { name: 'Projects', href: '/projects' },
+    { name: 'Contact', href: '/contact' }
   ];
 
   return (
@@ -31,20 +32,20 @@ const Header = ({ theme }: { theme: string }) => {
     }`}>
       <nav className="container mx-auto px-6 py-4 border-b border-[#FFBF00]/20">
         <div className="flex items-center justify-between">
-          <div className="text-xl font-bold text-[#FFBF00]">
+          <Link to="/" className="text-xl font-bold text-[#FFBF00]">
             Almost Genius Labs
-          </div>
+          </Link>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className={theme === 'dark' ? "text-[#f6ebef] hover:text-[#FFBF00] transition-colors duration-300 font-press-start" : "text-gray-700 hover:text-[#FFBF00] transition-colors duration-300 font-semibold"}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -61,14 +62,14 @@ const Header = ({ theme }: { theme: string }) => {
         {isMenuOpen && (
           <div className={`md:hidden mt-4 pb-4 ${theme === 'dark' ? 'bg-[#050505]/95' : 'bg-white'} backdrop-blur-sm rounded-lg border ${theme === 'light' ? 'border-gray-200' : 'border-[#FFBF00]/20'} px-4`}>
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className={`block py-2 ${theme === 'dark' ? 'text-[#f6ebef]' : 'text-gray-700'} hover:text-[#FFBF00] transition-colors duration-300`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         )}

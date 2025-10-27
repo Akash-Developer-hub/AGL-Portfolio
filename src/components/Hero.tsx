@@ -1,4 +1,5 @@
 import { ChevronDown, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = ({ theme }: { theme: string }) => {
   return (
@@ -44,18 +45,18 @@ const Hero = ({ theme }: { theme: string }) => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
-            <a
-              href="#projects"
+            <Link
+              to="/projects"
               className={`inline-flex items-center justify-center ${theme === 'dark' ? 'bg-[#f6ebef] text-[#050505]' : 'bg-gray-900 text-white'} px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105`}
             >
-              {theme === 'light' ? 'View Our Portfolio' : 'View Our Work'}
-            </a>
-            <a
-              href="#services"
+              {theme === 'light' ? 'View Our Project' : 'View Our Work'}
+            </Link>
+            <Link
+              to="/services"
               className={`inline-flex items-center justify-center border ${theme === 'dark' ? 'border-[#FFBF00]/30 text-[#f6ebef]' : 'border-gray-300 text-gray-700'} px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 hover:border-gray-400 transition-all duration-300`}
             >
               {theme === 'light' ? 'Explore Solutions' : 'Our Services'}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
