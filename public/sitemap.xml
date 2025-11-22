@@ -6,7 +6,7 @@
   <!-- Homepage - Highest Priority -->
   <url>
     <loc>https://almostgeniuslabs.com/</loc>
-    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     
@@ -64,7 +64,7 @@
   <!-- Services Section -->
   <url>
     <loc>https://almostgeniuslabs.com/services</loc>
-    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -72,31 +72,15 @@
   <!-- Projects/Portfolio Section -->
   <url>
     <loc>https://almostgeniuslabs.com/projects</loc>
-    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  
-  <!-- Team Section -->
-  <url>
-    <loc>https://almostgeniuslabs.com/team</loc>
-    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- About Section -->
-  <url>
-    <loc>https://almostgeniuslabs.com/about</loc>
-    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   
   <!-- Contact Section -->
   <url>
     <loc>https://almostgeniuslabs.com/contact</loc>
-    <lastmod>2025-10-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
