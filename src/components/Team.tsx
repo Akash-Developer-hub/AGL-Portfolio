@@ -3,19 +3,20 @@ import { AnimatedTestimonials } from "./ui/animated-testimonials";
 const Team = ({ theme }: { theme: string }) => {
   const teamMembers = [
     {
-      name: "Shashank Raj",
+      name: "Shashankraj",
       designation: "Founder & CEO",
       quote: "Passionate about meaningful interactions and innovative solutions.",
-      src: "/media/Shashank.jpeg",
+      src: "/media/Shashankraj.png",
       github: "https://github.com/shashank1107H",
       linkedin: "https://linkedin.com/in/shashankrajs",
-      website: "https://linkedin.com/in/shashankrajs"
+      website: "https://linkedin.com/in/shashankrajs",
+      objectPosition: "50% 20%"
     },
     {
       name: "Anish John",
       designation: "Co-Founder",
       quote: "Focused on user-centric design and robust functionality.",
-      src: "https://ui-avatars.com/api/?name=Anish+John&background=random",
+      src: "/media/Anish.png",
       github: "https://github.com/ANISH-JOHN777",
       linkedin: "https://linkedin.com/in/m-anish-raj",
       website: "https://linkedin.com/in/m-anish-raj"
@@ -61,7 +62,7 @@ const Team = ({ theme }: { theme: string }) => {
       name: "Wilfred Roy",
       designation: "Team Member",
       quote: "Combining vision with execution to deliver outstanding results.",
-      src: "https://ui-avatars.com/api/?name=Wilfred+Roy&background=random",
+      src: "/media/Wilfred.jpeg",
       github: "https://github.com/Wilfredroy",
       linkedin: "https://linkedin.com/in/wilfred-roy",
       website: "https://wilfredroy.github.io/"
@@ -70,7 +71,7 @@ const Team = ({ theme }: { theme: string }) => {
       name: "Mothieram",
       designation: "Team Member",
       quote: "Innovating at the intersection of technology and human needs.",
-      src: "https://ui-avatars.com/api/?name=Mothieram&background=random",
+      src: "/media/Mothie.jpg",
       github: "https://github.com/Mothieram",
       linkedin: "https://linkedin.com/in/mothie-ram",
       website: "https://mothieram.github.io/mothieramportfolio/"
