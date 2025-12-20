@@ -8,3 +8,4 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
 });
+// Updated config for new deps

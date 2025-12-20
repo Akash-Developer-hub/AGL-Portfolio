@@ -1,139 +1,94 @@
-import React from 'react';
-import { Linkedin, Twitter, Github } from 'lucide-react';
+import { AnimatedTestimonials } from "./ui/animated-testimonials";
 
-const Team = () => {
+const Team = ({ theme }: { theme: string }) => {
   const teamMembers = [
     {
-      name: 'Sarah Johnson',
-      role: 'CEO & Founder',
-      image: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Visionary leader with 15+ years in tech innovation.',
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        github: '#'
-      }
+      name: "Shashank Raj",
+      designation: "Founder & CEO",
+      quote: "Passionate about meaningful interactions and innovative solutions.",
+      src: "/media/Shashank.jpeg",
+      github: "https://github.com/shashank1107H",
+      linkedin: "https://linkedin.com/in/shashankrajs",
+      website: "https://linkedin.com/in/shashankrajs"
     },
     {
-      name: 'Michael Chen',
-      role: 'CTO',
-      image: 'https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Technical architect specializing in scalable solutions.',
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        github: '#'
-      }
+      name: "Anish John",
+      designation: "Co-Founder",
+      quote: "Focused on user-centric design and robust functionality.",
+      src: "https://ui-avatars.com/api/?name=Anish+John&background=random",
+      github: "https://github.com/ANISH-JOHN777",
+      linkedin: "https://linkedin.com/in/m-anish-raj",
+      website: "https://linkedin.com/in/m-anish-raj"
     },
     {
-      name: 'Emily Rodriguez',
-      role: 'Lead Designer',
-      image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Creative designer focused on user-centered experiences.',
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        github: '#'
-      }
+      name: "Akash",
+      designation: "Team Member",
+      quote: "Driving excellence through dedication and technical expertise.",
+      src: "/media/Akash.jpeg",
+      github: "https://github.com/Akash-Developer-hub",
+      linkedin: "https://linkedin.com/in/akash-s-",
+      website: "https://www.akashsivakumar.tech/",
+      objectPosition: "70% 20%",
     },
     {
-      name: 'David Kim',
-      role: 'Senior Developer',
-      image: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Full-stack developer with expertise in modern frameworks.',
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        github: '#'
-      }
+      name: "Mohamed Aslam",
+      designation: "Team Member",
+      quote: "Creating impactful experiences with code and creativity.",
+      src: "/media/Aslam.jpeg",
+      github: "https://github.com/aslam-03",
+      linkedin: "https://www.linkedin.com/in/mohamed-aslam-i",
+      website: "https://mohamedaslam.tech/"
     },
     {
-      name: 'Lisa Thompson',
-      role: 'Project Manager',
-      image: 'https://images.pexels.com/photos/3756681/pexels-photo-3756681.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Agile expert ensuring seamless project delivery.',
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        github: '#'
-      }
+      name: "Suman",
+      designation: "Team Member",
+      quote: "Turning complex problems into elegant, scalable solutions.",
+      src: "/media/Suman.jpeg",
+      github: "https://github.com/suman2k4",
+      linkedin: "https://linkedin.com/in/suman-s-",
+      website: "https://sumanx.tech/"
     },
     {
-      name: 'Alex Martinez',
-      role: 'DevOps Engineer',
-      image: 'https://images.pexels.com/photos/3777931/pexels-photo-3777931.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Infrastructure specialist optimizing deployment pipelines.',
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        github: '#'
-      }
-    }
+      name: "Vamsi Krishna",
+      designation: "Team Member",
+      quote: "Building the future with cutting-edge technology and design.",
+      src: "/media/Vamsi.jpeg",
+      github: "https://github.com/Vamsi-Krishna-NP",
+      linkedin: "https://linkedin.com/in/vamsi-krishna-np",
+      website: "https://linkedin.com/in/vamsi-krishna-np"
+    },
+    {
+      name: "Wilfred Roy",
+      designation: "Team Member",
+      quote: "Combining vision with execution to deliver outstanding results.",
+      src: "https://ui-avatars.com/api/?name=Wilfred+Roy&background=random",
+      github: "https://github.com/Wilfredroy",
+      linkedin: "https://linkedin.com/in/wilfred-roy",
+      website: "https://wilfredroy.github.io/"
+    },
+    {
+      name: "Mothieram",
+      designation: "Team Member",
+      quote: "Innovating at the intersection of technology and human needs.",
+      src: "https://ui-avatars.com/api/?name=Mothieram&background=random",
+      github: "https://github.com/Mothieram",
+      linkedin: "https://linkedin.com/in/mothie-ram",
+      website: "https://mothieram.github.io/mothieramportfolio/"
+    },
   ];
 
   return (
-    <section id="team" className="py-20">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#FFBF00] mb-4">
-            Our Team
-          </h2>
-          <p className="text-lg text-[#f6ebef] opacity-90 max-w-2xl mx-auto">
-            Meet the talented individuals driving innovation at AGL
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member, index) => (
-            <div
-              key={index}
-              className="bg-[#f6ebef] rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300 group"
-            >
-              <div className="relative overflow-hidden">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-[#FFBF00]/0 group-hover:bg-[#FFBF00]/10 transition-all duration-300"></div>
-              </div>
-              
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#050505] mb-1">
-                  {member.name}
-                </h3>
-                <p className="text-[#FFBF00] font-medium mb-3">
-                  {member.role}
-                </p>
-                <p className="text-[#050505] opacity-80 mb-4">
-                  {member.bio}
-                </p>
-                
-                <div className="flex space-x-4">
-                  <a
-                    href={member.social.linkedin}
-                    className="text-[#050505] hover:text-[#FFBF00] transition-colors duration-300"
-                  >
-                    <Linkedin className="w-5 h-5" />
-                  </a>
-                  <a
-                    href={member.social.twitter}
-                    className="text-[#050505] hover:text-[#FFBF00] transition-colors duration-300"
-                  >
-                    <Twitter className="w-5 h-5" />
-                  </a>
-                  <a
-                    href={member.social.github}
-                    className="text-[#050505] hover:text-[#FFBF00] transition-colors duration-300"
-                  >
-                    <Github className="w-5 h-5" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+    <section id="team" className="py-20 relative overflow-hidden">
+      <div className="absolute inset-0 bg-background/50 -z-10" />
+      <div className="container mx-auto px-6 mb-12 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 font-press-start">
+          Our Team
+        </h2>
+        <p className={`text-lg opacity-90 max-w-2xl mx-auto font-light-theme ${theme === 'light' ? 'text-black' : 'text-foreground'}`}>
+          Meet the talented individuals driving innovation at AGL
+        </p>
       </div>
+      <AnimatedTestimonials testimonials={teamMembers} autoplay={true} theme={theme} />
     </section>
   );
 };
