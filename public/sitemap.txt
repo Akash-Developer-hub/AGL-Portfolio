@@ -1,4 +1,6 @@
 https://almostgeniuslabs.com/
-https://almostgeniuslabs.com/services
-https://almostgeniuslabs.com/projects
-https://almostgeniuslabs.com/contact
+https://almostgeniuslabs.com/#services
+https://almostgeniuslabs.com/#projects
+https://almostgeniuslabs.com/#team
+https://almostgeniuslabs.com/#about
+https://almostgeniuslabs.com/#contact

@@ -2,7 +2,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Projects from './components/Projects';
-// import Team from './components/Team';
+import Team from './components/Team';
 import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
 import PullSwitch from './components/PullSwitch';
@@ -29,6 +29,7 @@ function App() {
       <section id="projects">
         <Projects theme={theme} />
       </section>
+      <Team theme={theme} />
       <section id="contact">
         <Footer theme={theme} />
       </section>
