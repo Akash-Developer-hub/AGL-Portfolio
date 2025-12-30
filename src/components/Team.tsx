@@ -76,6 +76,15 @@ const Team = ({ theme }: { theme: string }) => {
       linkedin: "https://linkedin.com/in/mothie-ram",
       website: "https://mothieram.github.io/mothieramportfolio/"
     },
+    {
+      name: "Praveen Kumar",
+      designation: "Team Member",
+      quote: "Bridging the digital and physical worlds through hardware innovation.",
+      src: "/media/Praveen Kumar.jpeg",
+      github: "https://github.com/Praveen882005",
+      linkedin: "https://www.linkedin.com/in/praveen-kumar-i",
+      website: "https://www.linkedin.com/in/praveen-kumar-i"
+    },
   ];
 
   return (
