@@ -14,7 +14,7 @@ const Team = ({ theme }: { theme: string }) => {
     },
     {
       name: "Anish John",
-      designation: "Co-Founder",
+      designation: "Co Founder & Chief Client Officer",
       quote: "Focused on user-centric design and robust functionality.",
       src: "/media/Anish.png",
       github: "https://github.com/ANISH-JOHN777",
