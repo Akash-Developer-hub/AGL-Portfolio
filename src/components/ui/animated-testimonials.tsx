@@ -1,6 +1,6 @@
 import { IconArrowLeft, IconArrowRight, IconBrandGithub, IconBrandLinkedin, IconExternalLink } from "@tabler/icons-react";
-import { motion, AnimatePresence, useMotionValue, useMotionTemplate } from "framer-motion";
-import { useCallback, useEffect, useState } from "react";
+import { motion, AnimatePresence, useMotionValue, useMotionTemplate, useInView } from "framer-motion";
+import { useCallback, useEffect, useState, useRef } from "react";
 import { cn } from "../../lib/utils";
 
 type Testimonial = {
@@ -28,6 +28,8 @@ export const AnimatedTestimonials = ({
     const [active, setActive] = useState(0);
     const [isAutoplayPaused, setIsAutoplayPaused] = useState(false);
     const isLight = theme === 'light';
+    const containerRef = useRef(null);
+    const isInView = useInView(containerRef, { amount: 0.4, once: false });
 
     // Mouse tracking for hover effect
     const mouseX = useMotionValue(-1000);
@@ -54,11 +56,11 @@ export const AnimatedTestimonials = ({
     };
 
     useEffect(() => {
-        if (autoplay && !isAutoplayPaused) {
+        if (autoplay && !isAutoplayPaused && isInView) {
             const interval = setInterval(handleNext, 5000);
             return () => clearInterval(interval);
         }
-    }, [autoplay, handleNext, isAutoplayPaused]);
+    }, [autoplay, handleNext, isAutoplayPaused, isInView]);
 
     const handleManualNext = () => {
         setIsAutoplayPaused(true);
@@ -75,7 +77,7 @@ export const AnimatedTestimonials = ({
     };
 
     return (
-        <div className={cn("max-w-sm md:max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-8", className)}>
+        <div ref={containerRef} className={cn("max-w-sm md:max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-8", className)}>
             <div className={`backdrop-blur-md p-8 md:p-12 rounded-3xl border shadow-2xl transition-colors duration-300 ${isLight
                 ? "bg-white border-gray-200 shadow-xl"
                 : "bg-secondary/20 border-white/10"
