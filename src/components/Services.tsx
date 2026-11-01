@@ -1,4 +1,4 @@
-import { Code, Palette, Zap, Shield, Globe, Users } from 'lucide-react';
+import { Code, Palette, Zap, Shield, Globe, Users, Terminal, Share2, Video } from 'lucide-react';
 
 const Services = ({ theme }: { theme: string }) => {
   const services = theme === 'light' ? [
@@ -31,6 +31,21 @@ const Services = ({ theme }: { theme: string }) => {
       icon: <Users className="w-8 h-8" />,
       title: 'Technical Leadership',
       description: 'Expert technical advisory, architecture reviews, team mentoring, and strategic technology planning to accelerate development velocity and product quality.'
+    },
+    {
+      icon: <Terminal className="w-8 h-8" />,
+      title: 'Custom Software Solutions',
+      description: 'Tailored software software architectures designed to streamline operations, ensuring scalability, reliability, and seamless integration for complex business needs.'
+    },
+    {
+      icon: <Share2 className="w-8 h-8" />,
+      title: 'Strategic Social Media Management',
+      description: 'Data-driven social media campaigns, community engagement strategies, and brand voice development to maximize digital presence and audience growth.'
+    },
+    {
+      icon: <Video className="w-8 h-8" />,
+      title: 'Professional Media Production',
+      description: 'High-end video editing, motion graphics, and visual storytelling services to create compelling content that resonates with your target audience.'
     }
   ] : [
     {
@@ -62,6 +77,21 @@ const Services = ({ theme }: { theme: string }) => {
       icon: <Users className="w-8 h-8" />,
       title: 'Consulting',
       description: 'Expert guidance and consultation for your technology initiatives.'
+    },
+    {
+      icon: <Terminal className="w-8 h-8" />,
+      title: 'Software Building',
+      description: 'Robust and scalable software solutions tailored to solve specific problems.'
+    },
+    {
+      icon: <Share2 className="w-8 h-8" />,
+      title: 'Social Media Handling',
+      description: 'Strategic management of your social presence to build audience and engagement.'
+    },
+    {
+      icon: <Video className="w-8 h-8" />,
+      title: 'Video Editing',
+      description: 'Professional video editing and post-production to bring your vision to life.'
     }
   ];
 
@@ -73,7 +103,7 @@ const Services = ({ theme }: { theme: string }) => {
             {theme === 'light' ? 'Technology Solutions' : 'Our Services'}
           </h2>
           <p className={`text-lg ${theme === 'dark' ? 'text-[#f6ebef]' : 'text-gray-600'} opacity-90 max-w-2xl mx-auto`}>
-            {theme === 'light' 
+            {theme === 'light'
               ? 'Comprehensive technology services designed to accelerate digital transformation and drive business innovation through strategic implementation and expert execution.'
               : 'We provide comprehensive solutions tailored to meet your unique business needs'
             }
